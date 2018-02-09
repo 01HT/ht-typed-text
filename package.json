@@ -1,0 +1,13 @@
+{
+  "name": "ht-typed-text",
+  "flat": true,
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/maksimyurkov/ht-typed-text",
+  "author": "maksimyurkov <yurkov.maksim.sergeevich@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "@polymer/polymer": "^3.0.0-pre.8",
+    "typed.js": "^2.0.6"
+  }
+}
