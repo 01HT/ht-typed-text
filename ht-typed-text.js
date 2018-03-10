@@ -1,11 +1,11 @@
 "use strict";
-import { Element } from "../@polymer/polymer/polymer-element.js";
-import Typed from "../typed.js/src/typed.js";
+import { LitElement, html } from "../@polymer/lit-element/lit-element.js";
+import Typed from "typed.js";
 
-class HTTypedText extends Element {
-  static get template() {
-    return `
-      <style>
+class HTTypedText extends LitElement {
+  render({textStyle}) {
+    return html`
+       <style>
         :host {
           display: inline;
           position: relative;
@@ -30,9 +30,10 @@ class HTTypedText extends Element {
         }
     }
       </style>
-      <span style="[[textStyle]]"></span>
-`;
+      <span style="${textStyle}"></span>
+    `;
   }
+  
   static get is() {
     return "ht-typed-text";
   }
@@ -44,9 +45,7 @@ class HTTypedText extends Element {
         observer: "_init"
       },
 
-      textStyle: {
-        type: String
-      }
+      textStyle: String
     };
   }
 
