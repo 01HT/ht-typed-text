@@ -3,7 +3,7 @@ import { LitElement, html } from "../@polymer/lit-element/lit-element.js";
 import Typed from "typed.js";
 
 class HTTypedText extends LitElement {
-  render({textStyle}) {
+  _render({textStyle}) {
     return html`
        <style>
         :host {
