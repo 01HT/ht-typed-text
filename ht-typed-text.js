@@ -1,9 +1,9 @@
 "use strict";
 import { LitElement, html } from "../@polymer/lit-element/lit-element.js";
-import Typed from "typed.js";
+import Typed from "typed.js/src/typed.js";
 
 class HTTypedText extends LitElement {
-  _render({textStyle}) {
+  _render({ textStyle }) {
     return html`
        <style>
         :host {
@@ -33,25 +33,19 @@ class HTTypedText extends LitElement {
       <span style="${textStyle}"></span>
     `;
   }
-  
+
   static get is() {
     return "ht-typed-text";
   }
 
   static get properties() {
     return {
-      options: {
-        type: Object,
-        observer: "_init"
-      },
-
       textStyle: String
     };
   }
 
-  _init() {
-    if (this.options === undefined) return;
-    new Typed(this.shadowRoot.querySelector("span"), this.options);
+  setOptions(options) {
+    new Typed(this.shadowRoot.querySelector("span"), options);
   }
 }
 
