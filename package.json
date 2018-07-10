@@ -1,10 +1,10 @@
 {
-  "name": "ht-typed-text",
+  "name": "@01ht/ht-typed-text",
   "version": "1.0.0",
   "main": "ht-typed-text.js",
-  "repository": "https://github.com/maksimyurkov/ht-typed-text",
-  "author": "maksimyurkov <yurkov.maksim.sergeevich@gmail.com>",
-  "license": "MIT",
+  "repository": "01ht/ht-typed-text",
+  "author": "01ht Ltd",
+  "license": "UNLICENSED",
   "dependencies": {
     "@polymer/lit-element": "^0.5.1",
     "typed.js": "^2.0.6"
