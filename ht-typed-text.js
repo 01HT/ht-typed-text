@@ -1,9 +1,10 @@
 "use strict";
-import { LitElement, html } from "../@polymer/lit-element/lit-element.js";
+import { LitElement, html } from "@polymer/lit-element";
 import Typed from "typed.js/src/typed.js";
 
 class HTTypedText extends LitElement {
-  _render({ textStyle }) {
+  render() {
+    const { textStyle } = this;
     return html`
        <style>
         :host {
@@ -30,7 +31,7 @@ class HTTypedText extends LitElement {
         }
     }
       </style>
-      <span style="${textStyle}"></span>
+      <span style=${textStyle}></span>
     `;
   }
 
@@ -40,7 +41,7 @@ class HTTypedText extends LitElement {
 
   static get properties() {
     return {
-      textStyle: String
+      textStyle: { type: String }
     };
   }
 

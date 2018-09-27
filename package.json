@@ -3,10 +3,10 @@
   "version": "1.0.0",
   "main": "ht-typed-text.js",
   "repository": "01ht/ht-typed-text",
-  "author": "01ht Ltd",
+  "author": "01HT Ltd",
   "license": "UNLICENSED",
   "dependencies": {
-    "@polymer/lit-element": "^0.5.1",
-    "typed.js": "^2.0.6"
+    "@polymer/lit-element": "^0.6.1",
+    "typed.js": "2.0.6"
   }
 }
