@@ -41,12 +41,13 @@ class HTTypedText extends LitElement {
 
   static get properties() {
     return {
-      textStyle: { type: String }
+      textStyle: { type: String },
+      options: { type: Object }
     };
   }
 
-  setOptions(options) {
-    new Typed(this.shadowRoot.querySelector("span"), options);
+  updated() {
+    new Typed(this.shadowRoot.querySelector("span"), this.options);
   }
 }
 
