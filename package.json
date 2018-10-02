@@ -7,6 +7,6 @@
   "license": "UNLICENSED",
   "dependencies": {
     "@polymer/lit-element": "^0.6.1",
-    "typed.js": "2.0.6"
+    "typed.js": "^2.0.9"
   }
 }
