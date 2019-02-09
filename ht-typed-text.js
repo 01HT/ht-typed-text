@@ -1,12 +1,9 @@
 "use strict";
-import { LitElement, html } from "@polymer/lit-element";
+import { LitElement, html, css } from 'lit-element';
 import Typed from "typed.js/src/typed.js";
 
 class HTTypedText extends LitElement {
-  render() {
-    const { textStyle } = this;
-    return html`
-       <style>
+   static styles = css`<style>
         :host {
           display: inline;
           position: relative;
@@ -30,13 +27,13 @@ class HTTypedText extends LitElement {
             opacity: 1;
         }
     }
-      </style>
-      <span style=${textStyle}></span>
+      </style>`;
+  
+  render() {
+    const { textStyle } = this;
+    return html`
+      <span style="${textStyle}"></span>
     `;
-  }
-
-  static get is() {
-    return "ht-typed-text";
   }
 
   static get properties() {
@@ -51,4 +48,4 @@ class HTTypedText extends LitElement {
   }
 }
 
-customElements.define(HTTypedText.is, HTTypedText);
+customElements.define("ht-typed-text", HTTypedText);

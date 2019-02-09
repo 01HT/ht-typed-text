@@ -6,7 +6,7 @@
   "author": "01HT Ltd",
   "license": "UNLICENSED",
   "dependencies": {
-    "@polymer/lit-element": "^0.6.1",
+    "lit-element": "^2.0.1",
     "typed.js": "^2.0.9"
   }
 }
