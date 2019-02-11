@@ -3,31 +3,32 @@ import { LitElement, html, css } from 'lit-element';
 import Typed from "typed.js/src/typed.js";
 
 class HTTypedText extends LitElement {
-   static styles = css`<style>
-        :host {
-          display: inline;
-          position: relative;
-          box-sizing: border-box;
-        }
+   static get styles() {
+    return css`
+    :host {
+      display: inline;
+      position: relative;
+      box-sizing: border-box;
+    }
 
-        .typed-cursor {
-          opacity: 1;
-          animation: blink .8s infinite;
-          text-decoration: none;
-        }
+    .typed-cursor {
+      opacity: 1;
+      animation: blink .8s infinite;
+      text-decoration: none;
+    }
 
     @keyframes blink {
-        0% {
-            opacity: 1;
-        }
-        50% {
-            opacity: 0;
-        }
-        100% {
-            opacity: 1;
-        }
-    }
-      </style>`;
+      0% {
+          opacity: 1;
+      }
+      50% {
+          opacity: 0;
+      }
+      100% {
+          opacity: 1;
+      }
+    }`
+  }
   
   render() {
     const { textStyle } = this;
